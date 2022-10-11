@@ -1,0 +1,12 @@
+{
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "yarn",
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "editor.insertSpaces": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "scss.scannerExclude": ["**/.git", "**/node_modules", "**/fonts"],
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore"
+}

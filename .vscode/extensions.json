@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "formulahendry.auto-close-tag",
+    "bradlc.vscode-tailwindcss",
+    "mrmlnc.vscode-scss"
+  ]
+}

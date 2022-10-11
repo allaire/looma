@@ -13,5 +13,4 @@ hugo.linux
 /.hugo_build.lock
 
 # Other
-.vscode/
 node_modules/
