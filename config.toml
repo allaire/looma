@@ -1,0 +1,5 @@
+baseURL = 'https://www.garderielooma.com/'
+languageCode = 'fr-ca'
+title = 'Looma ~ Garderie en ville, en pleine nature'
+
+disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT"]

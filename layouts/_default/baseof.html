@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+<head>
+    {{/* FIXME: Using hack for automatically re-building assets in development */}}
+    {{/* https://github.com/gohugoio/hugo/issues/8343#issuecomment-1019383325 */}}
+    {{ partialCached "head.html" . }}
+</head>
+<body>
+{{ block "main" . }}{{ end }}
+{{ partial "footer.html" . }}
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "looma",
+  "version": "1.0.0",
+  "description": "Looma Garderie",
+  "main": "postcss.config.js",
+  "scripts": {
+    "test": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.11",
+    "postcss": "^8.4.17",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^15.0.0",
+    "prettier": "^2.2.1",
+    "prettier-plugin-go-template": "0.0.10",
+    "tailwindcss": "^3.1.8"
+  }
+}

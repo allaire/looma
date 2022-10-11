@@ -1,0 +1,15 @@
+{{/* FIXME: Using hack for automatically re-building assets in development */}}
+{{/* https://github.com/gohugoio/hugo/issues/8343#issuecomment-1019383325 */}}
+
+{{ $sass := resources.Get "stylesheets/main.scss" }}
+{{ $styles := $sass | resources.ToCSS }}
+
+{{ $styles = $styles | resources.PostCSS }}
+
+{{ if  hugo.IsProduction  }}
+  {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
+{{ else if .Site.IsServer }}
+  {{ $styles = $styles | resources.ExecuteAsTemplate (printf "tailwind.dev.%v.css" now.UnixMilli) .}}
+{{ end }}
+
+<link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
