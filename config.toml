@@ -1,5 +1,13 @@
-baseURL = 'https://www.garderielooma.com/'
-languageCode = 'fr-ca'
-title = 'Looma ~ Garderie en ville, en pleine nature'
+baseURL = "https://www.garderielooma.com/"
 
 disableKinds = ["section", "taxonomy", "term", "RSS", "robotsTXT"]
+
+languageCode = "fr-ca"
+title = "Looma ~ Garderie en milieu familial à pédagogie par la nature"
+
+[params]
+  favicon = "favicon.png"
+  description = ""
+
+  [params.meta]
+    keywords = "Garderie Sherbrooke, Garderie Rock-Forest, Garderie en milieu familial, Garderie à pédagogie par la nature"

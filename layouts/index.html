@@ -1,8 +1,16 @@
 {{ define "main" }}
-<main class="container prose mx-auto px-4 py-24">
-  <h1>Looma</h1>
-  <h2>Subtile</h2>
-  <div>Looma description</div>
-  <input type="email" class="form-input">
+<main class="lg:w-full lg:flex">
+  <section class="flex items-center justify-center bg-feldgrau lg:w-1/2 lg:h-screen ">
+    {{ $logo := resources.Get "/images/logo.png" }}
+    <img src="{{ $logo.RelPermalink }}" alt="Garderie Looma" width="800">
+  </section>
+  <section class="flex items-center p-20 bg-aqua lg:w-1/2 lg:h-screen">
+    <div class="prose prose-looma">
+      <h1>En construction <span class="italic">(litéralement)</span></h1>
+      <p><b>Looma</b> est un service de garde en milieu familial à Sherbrooke qui propose une pédagogie par la nature.</p>
+      <p>Situé sur un terrain intime et sécuritaire de 2 acres entouré d'arbres, le tout en pleine ville.</p>
+      <p>L'ouverture est prévue pour la fin de l'été 2023.</p>
+    </div>
+  </section>
 </main>
 {{ end }}
