@@ -1,3 +1,11 @@
+const round = (num) =>
+  num
+    .toFixed(7)
+    .replace(/(\.[0-9]+?)0+$/, '$1')
+    .replace(/\.0$/, '')
+const rem = (px) => `${round(px / 16)}rem`
+const em = (px, base) => `${round(px / base)}em`
+
 module.exports = {
   content: ["./content/**/*.md", "./layouts/**/*.html"],
   theme: {
@@ -15,7 +23,7 @@ module.exports = {
         'sans': ["Source Sans Pro", "ui-sans-serif", "system-ui"],
         "serif": ["Lora", "ui-serif", "Georgia"],
       },
-      typography:({ theme }) => ({
+      typography: ({ theme }) => ({
         looma: {
           css: {
             '--tw-prose-body': theme('colors.feldgrau[700]'),
@@ -51,7 +59,7 @@ module.exports = {
             '--tw-prose-invert-th-borders': theme('colors.feldgrau[700]'),
             '--tw-prose-invert-td-borders': theme('colors.feldgrau[700]'),
           },
-        }
+        },
       }),
     },
   },
